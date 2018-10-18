@@ -1,0 +1,32 @@
+<style type="text/css">
+		a link{
+			color: white;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		a visited{
+			color: red;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		a hover{
+			color: yellow;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		.banner {
+			background-color: black;
+			padding:20px;
+			float:left;
+			width:25%;
+			color: white;
+		}
+		.blogge{
+			background-color: skyblue;
+			color: black;
+			width: 95%;
+			height: auto;
+		}
+	</style>
