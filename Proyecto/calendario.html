@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="calen">
+		mifecha(){
+			hoy=new Date();
+			dhoy=hoy.getDay();
+			mhoy=hoy.getDate(); 
+			ahoy=hoy.getMonth(); 
+			ahoy=hoy.getFullYear(); 
+		}
+		swicht(meses){
+			case 0:
+				mes="Enero";
+			break;
+			case 1:
+				mes="Febrero";
+			break;
+			case 2:
+				mes="Marzo";
+			break;
+			case 3:
+				mes="Abril";
+			break;
+			case 4:
+				mes="Mayo";
+			break;
+			case 5:
+				mes="Junio";
+			break;
+			case 6:
+				mes="Julio";
+			break;
+			case 7:
+				mes="Agosto";
+			break;
+			case 8:
+				mes="Septiembre";
+			break;
+			case 9:
+				mes="Octubre";
+			break;
+			case 10:
+				mes="Noviembre";
+			break;
+			case 11:
+				mes="Diciembre";
+			break;
+		}
+		for (var i = 0; i < Things.length; i++) {
+			Things[i]
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h2>Le Blog</h2>
+	</header>
+	<div class="banner">
+		<a href="principal.html">Inicio</a>
+	</div>
+	<div class="banner">
+		<a href="formulario.html">Galeria de formulas</a>
+	</div>
+	<div class="banner">
+		<a href="calendario.html">Calendario</a>
+	</div>
+	<div class="banner">
+		<a href="clases.html">Clases</a>
+	</div>
+	<div class="banner">
+		<a href="libros.html">Libros</a>
+	</div>
+
+	<div class="blogge">
+		<form name="call" action="#">
+			Año <input type="text" name="anios" maxlength="4" size="4">
+			<select name="meses">
+				<option value="0">Enero</option>
+				<option value="1">Febrero</option>
+				<option value="2">Marzo</option>
+				<option value="3">Abril</option>
+				<option value="4">Mayo</option>
+				<option value="5">Junio</option>
+				<option value="6">Julio</option>
+				<option value="7">Agosto</option>
+				<option value="8">Septiembre</option>
+				<option value="9">Octubre</option>
+				<option value="10">Noviembre</option>
+				<option value="11">Diciembre</option>
+			</select>
+			<button name="fecha" onclick="mifecha()">Buscar</button>
+		</form>
+	</div>
+</body>
+</html>
