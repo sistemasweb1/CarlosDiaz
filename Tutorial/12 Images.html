@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicios Basico</title>
+</head>
+<body>
+	<img src="logo.png" alt="Logo de la UACJ">
+	<br>
+	<img src="universo.jpg" alt="Universo">
+	<br>
+	<img src="cosas-buenas.jpg" alt="Cara feliz">
+	<hr>
+	
+	<img src="logo.png" alt="Logo de la UACJ" width="150px" height="150px">
+	<br>
+	<img src="universo.jpg" alt="Universo" width="100px" height="100px">
+	<br>
+	<img src="cosas-buenas.jpg" alt="Cara feliz" width="80px" height="80px">
+	<hr>
+
+	<a href="1 Basic.html">
+		<img src="logo.png" alt="Logo de la UACJ">
+	</a>
+	<hr>
+
+	<img src="Gato-volador.gif" alt="Nyan Cat" style="width: 50px;height: 70px;">
+	<hr>
+
+	<p><img src="universo.jpg" alt="Universo" style="float: right;width: 50px;height: 50px;">Esto es un texto de prueba para mostrar el como se comporta una imagen con el atributo de Float a la derecha</p>
+	<br>
+	<p><img src="universo.jpg" alt="Universo" style="float: left;width: 50px;height: 50px;">Esto es un texto de prueba para mostrar el como se comporta una imagen con el atributo de Float a la izquierda</p>
+	<hr>
+
+	<div style="background-image: url(universo.jpg);">
+		<h1>Esto es una prueba de como es tener una imagen de fondo</h1>
+	</div>
+	<hr>
+
+	<img src="figuras.png" alt="Figuras Geometricas" usemap="#mapeo">
+	<map name="mapeo">
+		<area shape="rect" coords="30, 10, 30, 40" href="1 Basic.html">
+		<area shape="rect" coords="40, " href="Basic.html">
+		<area shape="circle" coords="" href="Basic.html">
+		<area shape="poly" coords="" href="Basic.html">
+	</map>
+
+	<!--
+	<map name="mapeo">
+		<area shape="rect" coords="X1, Y1, X2, Y2" href="">
+		<area shape="circle" coords="X1, Y1, R" href="">
+		<area shape="poly" coords="X1, Y1, X2, Y2, ... , XX, YY" href="">
+	</map>
+	-->
+	<hr>
+
+	<picture>
+		<source media="(min-width:500px;)" srcset="cosas-buenas.png">
+		<source media="(min-width:600px;)" srcset="universo.png">
+		<img src="logo.png" alt="Logo de la UACJ" style="width: auto;">
+	</picture>
+</body>
+</html>
