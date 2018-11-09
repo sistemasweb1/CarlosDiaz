@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicios Basicos</title>
+	<style type="text/css">
+		.ciudades{
+			background-color: black;
+			color: white;
+			margin: 20px;
+			padding: 20px;
+		}
+
+		.main{
+			text-align: center;
+		}
+		span.nota{
+			font-size: 120%;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="ciudades main">
+		<h2>Juarez</h2>
+		<p>Ciudad fronteriza vecina de <span class="nota">El Paso</span>, su sector maquilador es su principal fuente de ingresos</p>
+	</div>
+	<div class="ciudades">
+		<h2>Villa Ahumada</h2>
+		<p>Es la ciudad mas cercana a Juarez, se reconoce por sus <span class="nota">quesos</span> y esta relativamente cerca de Ciudad Universitaria</p>
+	</div>
+	<div class="ciudades">
+		<h2>Chihuahua</h2>
+		<p>Capital del estado, estando en el <span class="nota">centro del estado</span> y funciona como su capital</p>
+	</div>
+
+	<h1 class="ciudades">Hola</h1>
+	<p class="ciudades">Mundo</p>
+
+	<button type="button" onclick="myFunction">Click</button>
+
+	<script>
+		function myFunction() {
+			var x=document.getElementsByClassName("ciudades");
+			for(var i=0; i<x.length; i++) {
+				x[i].style.display="none";
+			}
+		}
+</body>
+</html>

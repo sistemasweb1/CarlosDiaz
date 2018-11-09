@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicios Basicos</title>
+	<style type="text/css">
+		#Header{
+			background-color: lightblue;
+			color: black;
+			padding: 40px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<a href="#book">Esto es un marcador</a>
+	<h1 id="Header">Encabezado</h1>
+
+	<button type="button" onclick="mostrar()">Clickea</button>
+
+	<script type="text/javascript">
+		function mostrar(){
+			document.getElementById('Header').innerHTML='Hola Mundo';
+		}
+	</script>
+
+	<br><br><br><br>
+	<h1 id="book">Hola amigo</h1>
+</body>
+</html>
