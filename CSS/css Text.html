@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cambio en el texto</title>
+	<style type="text/css">
+		body{
+			 color: blue;
+		}
+		h1{
+			color: green;
+			text-align: center;
+			text-decoration: overline;
+		}
+		h2{
+			text-align: left;
+			text-decoration: line-through;
+		}
+		h3{
+			text-align: right;
+			text-decoration: underline;
+		}
+		a{
+			text-decoration: none;
+		}
+		p.uppercase{
+			text-transform: uppercase;
+		}
+		p.lowercase{
+			text-transform: lowercase;
+		}
+		p.capitalize{
+			text-transform: capitalize;
+		}
+		p.indent{
+			text-indent: 50px;
+		}
+		p.letter{
+			letter-spacing: 5px;
+		}
+		p.small{
+			line-height: 0.6;
+		}
+		p.big{
+			line-height: 1.8;
+		}
+	</style>
+</head>
+<body>
+	<h1>Encabezado color verde, alineado al centro y sobre rayadol</h1>
+	<h2>Encabezado alineado a la izquierda y tachado</h2>
+	<h3>Encabezado alineado a la derecha y subrayado</h3>
+	<div style="text-align: justify;">
+		<p>Todo este bloque esta justificado</p>
+		<p class="uppercase">Texto en mayusculas</p>
+		<p class="lowercase">Texto en minusculas</p>
+		<p class="capitalize">Texto con cada inicio de palabra en mayuscula</p>
+		<p class="indent">Este texto esta con una sangria inicial de 50px</p>
+		<p class="letter">Este texto tiene un espaciado de 5px por letra</p>
+		<p class="small">Texto con un espaciado<br>mas pequenio de lo usual</p>
+		<p class="big">Texto con un espaciado<br>mas grande de lo usual</p>
+	</div>
+	<div style="direction: rtl;">
+		<p>Texto en la direccion contraria</p>
+		<bdo>Esta etiqueta de te permite escribir el texto al reves</bdo>
+	</div>
+	<div style="word-spacing: 10px;">
+		<p>Texto con un espaciado de 10px</p>
+	</div>
+	<div style="word-spacing: -5px;">
+		<p>Texto con un espaciado de -5px</p>
+	</div>
+	<div style="text-shadow: 3px 2px red;">
+		<p>Texto con sombra</p>
+	</div>
+</body>
+</html>

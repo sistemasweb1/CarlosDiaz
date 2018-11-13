@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lineas de caja</title>
+	<style type="text/css">
+		p {
+			outline-color:red;
+		}
+		p.dotted {
+			outline-style: dotted;
+		}
+		p.dashed {
+			outline-style: dashed;
+		}
+		p.solid {
+			outline-style: solid;
+		}
+		p.double {
+			outline-style: double;
+		}
+		p.groove {
+			outline-style: groove;
+		}
+		p.ridge {
+			outline-style: ridge;
+		}
+		p.inset {
+			outline-style: inset;
+		}
+		p.outset {
+			outline-style: outset;
+		}
+		p.ex1{
+			border: 1px solid green;
+			outline-style: solid;
+			outline-color: invert;
+		}
+		p.ex2{
+			margin: 20px;
+			border: 1px solid black;
+			outline: 1px solid red;
+			outline-offset: 15px;
+		}
+	</style>
+</head>
+<body>
+	<p class="dotted">Caja de tipo puntos</p>
+	<p class="dashed">Caja de tipo punteada</p>
+	<p class="solid">Caja de tipo linea solida</p>
+	<p class="double">Caja de tipo linea doble</p>
+	<p class="groove">Caja de tipo hundido</p>
+	<p class="ridge">Caja de tipo salido</p>
+	<p class="inset">Caja de tipo 3d afuera</p>
+	<p class="outset">Caja de tipo 3d adentro</p>
+	<hr><hr><hr><hr>
+	<p class="ex1">Caja tipo solido invertido</p>
+	<br>
+	<p class="ex2">Caja con offset</p>
+</body>
+</html>
