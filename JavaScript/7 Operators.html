@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operadores y Operables</title>
+</head>
+<body>
+	<p id="demo1">Suma</p>
+	<p id="demo2">Multiplicacion</p>
+	<p id="demo3">Resta</p>
+	<p id="demo4">Division</p>
+	<p id="demo5">Modulo</p>
+	<p id="demo6">Acumulado</p>
+	<p id="demo7">Texto</p>
+	<button type="button" onclick="fu1()">Click</button>
+	<script type="text/javascript">
+		function fu1() {
+			var x = 5;
+			var y = 2;
+			var z = x + y;
+			var text1="Hola";
+			var text2="Mundo";
+			var text3;
+			document.getElementById('demo1').innerHTML=z;
+			z=x*y;
+			document.getElementById('demo2').innerHTML=z;
+			z=x-y;
+			document.getElementById('demo3').innerHTML=z;
+			z=x/y;
+			document.getElementById('demo4').innerHTML=z;
+			z=x%y;
+			document.getElementById('demo5').innerHTML=z;
+			x+=x;
+			document.getElementById('demo6').innerHTML=x;
+			text3=text1+" "+text2;
+			document.getElementById('demo7').innerHTML=text3;
+		}
+	</script>
+</body>
+</html>

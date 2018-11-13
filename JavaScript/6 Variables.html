@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variable</title>
+</head>
+<body>
+	<p id="demo1"></p>
+	<button type="button" onclick="fu1()">Click</button>
+	<br>
+	<p id="demo2"></p>
+	<button type="button" onclick="fu2()">Click</button>
+	<script type="text/javascript">
+		function fu1(){
+			var x, y, z;
+			x=5;
+			y=5;
+			z=x+y;
+			document.getElementById('demo1').innerHTML=z;
+		}
+		function fu2() {
+			var pi;
+			var name="Carlos", lastname="Diaz";
+			pi=3.14159;
+			document.getElementById('demo2').innerHTML="My full name is "+name+" "+lastname+" y pi es igual a "+pi;
+		}
+	</script>
+</body>
+</html>
