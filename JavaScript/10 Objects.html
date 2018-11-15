@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objetos</title>
+</head>
+<body>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<script type="text/javascript">
+		var person={
+			name:"John",
+			lastname:"Whick",
+			id:5566,
+			fullname: function() {
+				return this.name+" "+this.lastname;
+			}
+		};
+		var car={
+			type:"Fiat",
+			model:"500",
+			color:"white"
+		};
+		document.getElementById('demo1').innerHTML = "The car is type "+car.type;
+		document.getElementById("demo2").innerHTML = person.fullname();
+	</script>
+</body>
+</html>

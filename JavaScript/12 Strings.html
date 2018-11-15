@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Caracteres</title>
+</head>
+<body>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+	<p id="demo8"></p>
+	<p id="demo9"></p>
+	<p id="demo10"></p>
+	<p id="demo11"></p>
+	<script type="text/javascript">
+		var name="John Wick";
+		var carname1="Volvo XC60";
+		var carname2='Volvo XC70';
+		var res1="It\'s alright";
+		var res2="He is called \'Jonny\'";
+		var res3='He is called \"Buggy Man\"';
+		var text="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		var sln=text.length;
+		var x="We are the so-called \"Vikings\" from the north";
+
+		var y="Carlos";
+		var z=new String("Carlos");
+
+		document.getElementById('demo1').innerHTML=name;
+		document.getElementById('demo2').innerHTML=carname1;
+		document.getElementById('demo3').innerHTML=carname2;
+		document.getElementById('demo4').innerHTML=res1;
+		document.getElementById('demo5').innerHTML=res2;
+		document.getElementById('demo6').innerHTML=res3;
+		document.getElementById('demo7').innerHTML=text;
+		document.getElementById('demo8').innerHTML=sln;
+		document.getElementById('demo9').innerHTML=x;
+		document.getElementById('demo10').innerHTML=(y==z);
+		document.getElementById('demo11').innerHTML=(y===z);
+	</script>
+</body>
+</html>

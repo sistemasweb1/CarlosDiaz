@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tipos de variables</title>
+</head>
+<body>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<button type="button" onclick="fu1()">Click</button>
+	<script type="text/javascript">
+		var num=20; // Variable int o entero
+		var name="Carlos"; // Variable char o texto
+		var clase{
+			firstname:"Jonh",
+			lastname:"Wick",
+		}; // Variable object u objeto
+		var x = 16+4+"Volvo";
+		var y = "Volvo"+16+4;
+		function fu1() {
+			document.getElementById('demo1').innerHTML=num;
+			document.getElementById('demo2').innerHTML=name;
+			document.getElementById('demo3').innerHTML=clase;
+			document.getElementById('demo4').innerHTML=x;
+			document.getElementById('demo5').innerHTML=y;
+		}
+	</script>
+</body>
+</html>

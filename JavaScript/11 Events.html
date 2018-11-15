@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos</title>
+</head>
+<body>
+	<p id="demo1"></p>
+	<button onclick="document.getElementById('demo1').innerHTML=Date()">Hora</button>
+	<br>
+	<button onclick="this.innerHTML=Date()">Hora 2</button>
+	<br>
+	<p id="demo2"></p>
+	<button onclick="mostrarHora()">Horario</button>
+	<script type="text/javascript">
+		function mostrarHora() {
+			document.getElementById('demo2').innerHTML=Date();
+		}
+	</script>
+</body>
+</html>
