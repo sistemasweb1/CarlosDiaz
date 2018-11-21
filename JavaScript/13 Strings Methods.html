@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metodos de cadenas</title>
+</head>
+<body>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<br>
+	<p id="demo7"></p>
+	<p id="demo8"></p>
+	<p id="demo9"></p>
+	<p id="demo10"></p>
+	<p id="demo11"></p>
+	<p id="demo12"></p>
+	<p id="demo13"></p>
+	<p id="demo14"></p>
+	<br>
+	<p id="demo15"></p>
+	<p id="demo16"></p>
+	<p id="demo17"></p>
+	<p id="demo18"></p>
+	<br>
+	<p id="demo19"></p>
+	<p id="demo20"></p>
+	<p id="demo21"></p>
+	<p id="demo22"></p>
+	<br>
+	<p id="demo23"></p>
+	<p id="demo24"></p>
+	<p id="demo25"></p>
+	<p id="demo26"></p>
+	<script type="text/javascript">
+		var str1="La posicion de Nombre es ";
+		var pos1=str1.indexOf("Nombre");
+		var pos2=str1.lastIndexOf("Nombre");
+		var pos3=str1.lastIndexOf("Vida");
+		var pos4=str1.indexOf("Nombre", 15);
+		var pos5=str1.search("Nombre");
+		var str2="Comida, Bebida, Vida";
+		var res1=str2.slice(8, 15);
+		var res2=str2.slice(-15, -8);
+		var res3=str2.slice(8);
+		var res4=str2.slice(-15);
+		var res5=str2.substring(8, 14);
+		var res6=str2.substring(8);
+		var res7=str2.substring(-4);
+		var str3="Atras, Nunca Atras";
+		var rem1=str3.replace("Nunca", "Siempre");
+		var rem2=str3.replace("Atras", "Adelante");
+		var rem3=str3.replace("ATRAS", "Adelante");
+		var rem3=str3.replace(/Atras/g, "Adelante");
+		var str4="Hola Mundo";
+		var upp=str4.toUpperCase();
+		var low=str4.toLowerCase();
+		var con=str2.Concat(" ", str3);
+		var str5="         Que hacer         ";
+		alert(str5.trim());
+		var str6="a, b, c, d, e";
+		var ar1=str6.split(",");
+		var ar2=str6.split(" ");
+		var ar3=str6.split("|");
+
+
+		document.getElementById('demo1').innerHTML=str1;
+		document.getElementById('demo2').innerHTML=pos1;
+		document.getElementById('demo3').innerHTML=pos2;
+		document.getElementById('demo4').innerHTML=pos3;
+		document.getElementById('demo5').innerHTML=pos4;
+		document.getElementById('demo6').innerHTML=pos5;
+
+		document.getElementById('demo7').innerHTML=str2;
+		document.getElementById('demo8').innerHTML=res1;
+		document.getElementById('demo9').innerHTML=res2;
+		document.getElementById('demo10').innerHTML=res3;
+		document.getElementById('demo11').innerHTML=res4;
+		document.getElementById('demo12').innerHTML=res5;
+		document.getElementById('demo13').innerHTML=res6;
+		document.getElementById('demo14').innerHTML=res7;
+
+		document.getElementById('demo15').innerHTML=str3;
+		document.getElementById('demo16').innerHTML=rem1;
+		document.getElementById('demo17').innerHTML=rem2;
+		document.getElementById('demo18').innerHTML=rem3;
+
+		document.getElementById('demo19').innerHTML=str4;
+		document.getElementById('demo20').innerHTML=upp;
+		document.getElementById('demo21').innerHTML=low;
+		document.getElementById('demo22').innerHTML=con;
+
+		document.getElementById('demo23').innerHTML=str6;
+		document.getElementById('demo24').innerHTML=ar[0];
+		document.getElementById('demo25').innerHTML=ar[2];
+		document.getElementById('demo26').innerHTML=ar[4];
+	</script>
+</body>
+</html>
