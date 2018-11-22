@@ -6,56 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<script type="text/javascript" src="calen">
-		mifecha(){
-			hoy=new Date();
-			dhoy=hoy.getDay();
-			mhoy=hoy.getDate(); 
-			ahoy=hoy.getMonth(); 
-			ahoy=hoy.getFullYear(); 
-		}
-		swicht(meses){
-			case 0:
-				mes="Enero";
-			break;
-			case 1:
-				mes="Febrero";
-			break;
-			case 2:
-				mes="Marzo";
-			break;
-			case 3:
-				mes="Abril";
-			break;
-			case 4:
-				mes="Mayo";
-			break;
-			case 5:
-				mes="Junio";
-			break;
-			case 6:
-				mes="Julio";
-			break;
-			case 7:
-				mes="Agosto";
-			break;
-			case 8:
-				mes="Septiembre";
-			break;
-			case 9:
-				mes="Octubre";
-			break;
-			case 10:
-				mes="Noviembre";
-			break;
-			case 11:
-				mes="Diciembre";
-			break;
-		}
-		for (var i = 0; i < Things.length; i++) {
-			Things[i]
-		}
-	</script>
+	<link rel="stylesheet" type="text/css" href="cal/tcal.css">
+	<script type="text/javascript" src="tcal.js"></script> 
 </head>
 <body>
 	<header>
@@ -71,13 +23,14 @@
 		<a href="calendario.html">Calendario</a>
 	</div>
 	<div class="banner">
-		<a href="clases.html">Clases</a>
-	</div>
-	<div class="banner">
 		<a href="libros.html">Libros</a>
 	</div>
-
 	<div class="blogge">
+		<input type="text" name="date2" class="tcal red-text" value="" />
+	</div>
+
+		
+		<!--
 		<form name="call" action="#">
 			Año <input type="text" name="anios" maxlength="4" size="4">
 			<select name="meses">
@@ -94,8 +47,32 @@
 				<option value="10">Noviembre</option>
 				<option value="11">Diciembre</option>
 			</select>
-			<button name="fecha" onclick="mifecha()">Buscar</button>
+			<button name="fecha" onclick="mifecha(meses)">Buscar</button>
 		</form>
 	</div>
+	<div id="Calen" style="visibility: hidden; text-align: center;">
+		<table>
+			<caption id="Tmes"></caption>
+			<tr>
+				<th>Lunes</th>
+				<th>Martes</th>
+				<th>Miercoles</th>
+				<th>Jueves</th>
+				<th>Viernes</th>
+				<th>Sabado</th>
+				<th>Domingo</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+-->
 </body>
 </html>

@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
-<body>
+<body onload="mover()">
 	<header>
 		<h2>Le Blog</h2>
 	</header>
@@ -21,14 +21,39 @@
 		<a href="calendario.html">Calendario</a>
 	</div>
 	<div class="banner">
-		<a href="clases.html">Clases</a>
-	</div>
-	<div class="banner">
 		<a href="libros.html">Libros</a>
 	</div>
 
-    <div class="blogge">
-    	<p>Le blogge</p>    
-    </div>
+	<form name="form_reloj">
+		<input type="text" name="reloj">
+		<script type="text/javascript">
+			function mover(){
+				horario=new Date();
+				hora=horario.getHours();
+				minuto=horario.getMinutes();
+				segun=horario.getSeconds();
+
+				impr=hora+":"+minuto+":"+segun;
+				document.form_reloj.reloj.value = impr;
+				setTimeout("mover()",1000);
+			}
+			
+		</script>
+	</form>
+	<div class="blogge">
+		<h3>Tipos de trabajos</h3>
+		<p>Para hacer cualquier tipo de trabajo es necesario sabe que es lo que se quiere hacer primeramente, no se puede tener un proyecto si este no esta aterrizado en primer lugar.</p>
+	</div>
+	<br>
+	<div class="blogge">
+		<h3>Carrera de aniversario</h3>
+		<img src="img/carrera.jpg" style="width: 60%; height: auto;">
+		<p>Algunos proyectos requieren de informacion extra, durante uno de los proyectos realizados se necesitaba la informacion de la cantidad de asistencia en la carrera de la UACJ, pero eso informacion no esta del todo clara y por si fuera poco no esta en forma exacta.</p>
+	</div>
+	<div class="blogge">
+		<h3>Tiempo definido</h3>
+		<p>Siempre es necesario definir que actividades se van a desarrollar</p>
+		<a href="http://www.uacj.mx/calendario/Paginas/index_2018.html"><img src="img/cc.png"></a><p>Una imagen de las actividades que se desarrollan en la UACJ, puedes hacer click en la imagen para ver el calendario completo</p>
+	</div>
 </body>
 </html>
